@@ -1,7 +1,13 @@
 import React from 'react';
+import ProductosList from '../components/ProductosList';
 
 function ProductosPage() {
-  return <h1>Gestión de Productos</h1>;
+  return (
+    <div>
+      <h1>Gestión de Productos</h1>
+      <ProductosList />
+    </div>
+  );
 }
 
 export default ProductosPage;
