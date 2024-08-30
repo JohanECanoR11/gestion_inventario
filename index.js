@@ -11,10 +11,8 @@ app.use(cors());
 app.use(express.json());
 
 // Conexión a la base de datos
-mongoose.connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-})
+mongoose.connect(process.env.MONGO_URI)
+
 .then(() => console.log('Conectado a la base de datos'))
 .catch((err) => console.error('Error al conectar a la base de datos:', err));
 
